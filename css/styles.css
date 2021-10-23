@@ -66,6 +66,15 @@ p {
   color: #fff;
 }
 
+.hero.blog {
+  background: url('../images/home/blog.jpg') no-repeat center center/cover;
+  height: 30vh;
+}
+
+.hero.blog .content {
+  padding-top: 60px;
+}
+
 .hero .content {
   height: 100%;
   display: flex;
@@ -181,6 +190,29 @@ p {
   margin-top: 20px;
 }
 
+/* Blog Post  */
+.post {
+  padding: 50px 30px;
+}
+
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.post .meta {
+  margin-bottom: 30px;
+}
+
+.post img {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
+}
+
 /* footer */
 .footer {
   display: flex;
@@ -201,4 +233,35 @@ p {
 
 .footer .social > * {
   margin: 0 15px;
+}
+
+/* RESPONSIVE CHANGES */
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .team img {
+    width: 70%;
+  }
+
+  .hero.blog .content {
+    padding-top: 110px;
+  }
 }
