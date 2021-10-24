@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
     <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Welcome to EdgeLedger</title>
 </head>
 <body id="home">
@@ -86,20 +88,38 @@
             </header>
             <div class="row">
                 <div class="column">
-                    <img src="./images/cases/cases1.jpg" alt="case 1">
-                    <img src="./images/cases/cases2.jpg" alt="case 2">
+
+                    <a href="./images/cases/cases1.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+                        <img src="./images/cases/cases1.jpg" alt="case 1">
+                    </a>
+                    
+                    <a href="./images/cases/cases2.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+                        <img src="./images/cases/cases2.jpg" alt="case 2">
+                    </a>
                 </div>
                 <div class="column">
-                    <img src="./images/cases/cases3.jpg" alt="case 3">
-                    <img src="./images/cases/cases4.jpg" alt="case 4">
+                    <a href="./images/cases/cases3.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+                        <img src="./images/cases/cases3.jpg" alt="case 3">
+                    </a>
+                    <a href="./images/cases/cases4.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+                        <img src="./images/cases/cases4.jpg" alt="case 4">
+                    </a>
                 </div>
                 <div class="column">
-                    <img src="./images/cases/cases5.jpg" alt="case 5">
-                    <img src="./images/cases/cases6.jpg" alt="case 6">
+                    <a href="./images/cases/cases5.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+                        <img src="./images/cases/cases5.jpg" alt="case 5">
+                    </a>
+                    <a href="./images/cases/cases6.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+                        <img src="./images/cases/cases6.jpg" alt="case 6">
+                    </a>
                 </div>
                 <div class="column">
-                    <img src="./images/cases/cases7.jpg" alt="case 7">
-                    <img src="./images/cases/cases8.jpg" alt="case 8">
+                    <a href="./images/cases/cases7.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+                        <img src="./images/cases/cases7.jpg" alt="case 7">
+                    </a>
+                    <a href="./images/cases/cases8.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+                        <img src="./images/cases/cases8.jpg" alt="case 8">
+                    </a>
                 </div>
             </div>
         </section> 
@@ -191,7 +211,12 @@
     </div>
     <p>Copyright &copy; 2021 - EdgeLedger</p>
 </footer>
-
-<script src="script.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.5.0.min.js"
+integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+crossorigin="anonymous"
+></script>
+<script src="./js/lightbox.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
